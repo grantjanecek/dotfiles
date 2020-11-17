@@ -32,6 +32,7 @@ mkdir $HOME/Sites
 
 # Create sites subdirectories
 mkdir $HOME/Sites/laravel
+mkdir $HOME/Sites/personal
 
 # Clone Github repositories
 # ./clone.sh
