@@ -16,6 +16,8 @@ alias docs="lara && cd docs/"
 
 # Laravel
 alias a="php artisan"
+alias artisan='php artisan'
+
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
 
@@ -24,6 +26,8 @@ alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
 alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias pf='phpunit --filter'
+
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
@@ -50,6 +54,7 @@ alias commit="git add . && git commit -m"
 alias diff="git diff"
 alias force="git push --force"
 alias nuke="git clean -df && git reset --hard"
+alias nah="git clean -df && git reset --hard"
 alias pop="git stash pop"
 alias pull="git pull"
 alias push="git push"
