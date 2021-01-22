@@ -17,9 +17,9 @@ alias docs="lara && cd docs/"
 # Laravel
 alias a="php artisan"
 alias artisan='php artisan'
-
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
+alias sail='bash vendor/bin/sail'
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -61,4 +61,12 @@ alias push="git push"
 alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
-alias wip="commit wip"
+alias wip="git add . && commit wip"
+alias softreset="git reset --soft HEAD~1"
+
+#Vim
+# alias ctags="`brew --prefix`/bin/ctags"	
+
+# Cruxos
+alias phs="phinx status -e"
+alias phm="phinx migrate -e"

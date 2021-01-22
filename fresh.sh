@@ -21,7 +21,7 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 pecl install memcached imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose tighten/takeout
+/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose tightenco/takeout
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
@@ -29,13 +29,6 @@ $HOME/.composer/vendor/bin/valet install
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
-
-# Create sites subdirectories
-mkdir $HOME/Sites/laravel
-mkdir $HOME/Sites/personal
-
-# Clone Github repositories
-# ./clone.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
