@@ -11,35 +11,25 @@ alias c="clear"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
 
 # Laravel
 alias a="php artisan"
 alias artisan='php artisan'
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
+
+# Sail
+alias sail='bash vendor/bin/sail'
 alias sail='bash vendor/bin/sail'
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias php74="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:7.4"
-alias php8="docker run -it -w /data -v ${PWD}:/data:delegated --entrypoint php --rm registry.gitlab.com/grahamcampbell/php:8.0"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
 alias pf='phpunit --filter'
-
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
-
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Docker
 alias docker-composer="docker-compose"
@@ -63,10 +53,3 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="git add . && commit wip"
 alias softreset="git reset --soft HEAD~1"
-
-#Vim
-# alias ctags="`brew --prefix`/bin/ctags"	
-
-# Cruxos
-alias phs="phinx status -e"
-alias phm="phinx migrate -e"
