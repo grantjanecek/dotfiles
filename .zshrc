@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# fix Hyper first line precent sign
+unsetopt PROMPT_SP
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
