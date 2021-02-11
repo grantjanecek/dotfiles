@@ -8,10 +8,16 @@ alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 
+# Applications
+alias p='phpstorm'
+alias c='code'
+alias s='subl'
+
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias sites="cd $HOME/code"
 alias rm=trash
 
 # Laravel
@@ -24,7 +30,6 @@ alias seed="php artisan db:seed"
 alias jigsaw="./vendor/bin/jigsaw"
 
 # Sail
-alias sail='bash vendor/bin/sail'
 alias sail='bash vendor/bin/sail'
 
 # PHP
