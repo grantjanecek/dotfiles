@@ -11,12 +11,16 @@ alias c="clear"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
+alias rm=trash
 
 # Laravel
 alias a="php artisan"
 alias artisan='php artisan'
 alias fresh="php artisan migrate:fresh --seed"
 alias seed="php artisan db:seed"
+
+# Jigsaw
+alias jigsaw="./vendor/bin/jigsaw"
 
 # Sail
 alias sail='bash vendor/bin/sail'

@@ -3,11 +3,12 @@ tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
-tap shivammathur/php
+tap 'shivammathur/php'
 
 # Binaries
 brew 'awscli'
 brew 'bash' # Latest Bash version
+brew 'blueutil'
 brew 'coreutils' # Those that come with macOS are outdated
 # brew 'ffmpeg'
 brew 'go'
