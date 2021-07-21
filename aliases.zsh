@@ -24,6 +24,8 @@ alias rm=trash
 alias a="php artisan"
 alias artisan='php artisan'
 alias fresh="php artisan migrate:fresh --seed"
+alias test="php artisan test"
+alias ptest="php artisan test --parallel"
 alias seed="php artisan db:seed"
 
 # Jigsaw
@@ -48,6 +50,8 @@ alias docker-composer="docker-compose"
 alias gst="git status"
 alias gb="git branch"
 alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gm="git merge"s
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"
 alias commit="git add . && git commit -m"
@@ -63,3 +67,8 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="git add . && commit wip"
 alias softreset="git reset --soft HEAD~1"
+
+# Wide Open Tech
+alias wot="cd $HOME/WotSites"
+alias kido="cd $HOME/WotSites/kidolink/src"
+
