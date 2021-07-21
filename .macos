@@ -24,7 +24,7 @@ sudo scutil --set LocalHostName "MacBookGrantJ"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook Grant"
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=%80
+sudo nvram SystemAudioVolume=%00
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 # defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -150,11 +150,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 2 # normal minimum is 2 (30 ms)
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 3 # normal minimum is 2 (30 ms)
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
