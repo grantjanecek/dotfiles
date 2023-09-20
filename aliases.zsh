@@ -12,6 +12,7 @@ alias c="clear"
 alias p='phpstorm'
 alias c='code'
 alias s='subl'
+# alias vim="nvim"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
@@ -22,26 +23,31 @@ alias rm=trash
 
 # Laravel
 alias a="php artisan"
+alias la="lando artisan"
 alias artisan='php artisan'
-alias fresh="php artisan migrate:fresh --seed"
-alias test="php artisan test"
-alias ptest="php artisan test --parallel"
-alias seed="php artisan db:seed"
+alias fresh="artisan migrate:fresh"
+alias test="artisan test"
+alias ptest="artisan test --parallel"
+alias seed="artisan db:seed"
+alias pf="artisan test --filter="
+alias lpf="lando phpunit --filter="
+alias fst="DB_DATABASE=stills_testing a migrate:fresh"
 
 # Jigsaw
 alias jigsaw="./vendor/bin/jigsaw"
 
-# Sail
-alias sail='bash vendor/bin/sail'
-
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
 alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
-alias pf='phpunit --filter'
+alias lc=" lando composer"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
 alias watch="npm run watch"
+
+# Python
+alias python="python3"
+alias py="python"
 
 # Docker
 alias docker-composer="docker-compose"
@@ -51,7 +57,7 @@ alias gst="git status"
 alias gb="git branch"
 alias gc="git checkout"
 alias gcb="git checkout -b"
-alias gm="git merge"s
+alias gm="git merge"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias amend="git add . && git commit --amend --no-edit"
 alias commit="git add . && git commit -m"
@@ -67,8 +73,10 @@ alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="git add . && commit wip"
 alias softreset="git reset --soft HEAD~1"
+alias triggerci="git commit --allow-empty -m 'Trigger Build' && git push"
+alias gcp="git cherry-pick"
 
-# Wide Open Tech
-alias wot="cd $HOME/WotSites"
-alias kido="cd $HOME/WotSites/kidolink/src"
+# Film and Music
+alias fs="cd $HOME/Sites/filmsupply"
+alias md="cd $HOME/Sites/musicbed"
 

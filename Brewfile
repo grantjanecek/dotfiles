@@ -19,12 +19,12 @@ brew 'git'
 # brew 'grep'
 # brew 'httpie'
 # brew 'hub'
-brew 'mackup'
+# brew 'mackup'
 # brew 'mas' # Mac App Store manager
 # brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20s
 # brew 'svn'
-# brew 'trash' # Manage the Trash bin
-# brew 'tree' # List directories in a tree structure
+brew 'trash' # Manage the Trash bin
+brew 'tree' # List directories in a tree structure
 # brew 'zlib' # Needed for Memcached
 
 # Development
@@ -43,14 +43,14 @@ brew 'yarn'
 cask '1password'
 cask '1password-cli'
 cask 'alfred'
+cask 'commander-one'
+cask 'bartender'
 cask 'cyberduck'
 cask 'discord'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
 cask 'flux'
-cask 'google-chrome'
-cask 'hyper'
 cask 'iterm2'
 cask 'nordvpn'
 cask 'notion'
@@ -64,7 +64,6 @@ cask 'the-unarchiver'
 cask 'tinkerwell'
 cask 'transmission'
 cask 'visual-studio-code'
-cask 'vlc'
 
 ## Manual
 ## Hey Mail
