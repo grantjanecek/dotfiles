@@ -1,4 +1,4 @@
-# Dries's Dotfiles
+# Grant's Dotfiles
 
 This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
 
@@ -17,7 +17,6 @@ First, go through the checklist below to make sure you didn't forget anything be
 - Did you remember to save all important documents from non-iCloud directories?
 - Did you save all of your work from apps which aren't synced through iCloud?
 - Did you remember to export important data from your local database?
-- Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
 
 ### Installing macOS cleanly
 
@@ -34,12 +33,16 @@ If you did all of the above you may now follow these install instructions to set
 5. Clone this repo to `~/.dotfiles`
 6. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
 6. Run `fresh.sh` to start the installation
-7. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 8. Restart your computer to finalize the process
 
 Your Mac is now ready to use!
 
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
+
+## Manual processes
+1. Install monolosa font
+2. Add moom license
+3. add alfred license
 
 ## Your Own Dotfiles
 
@@ -52,13 +55,6 @@ Go through the [`.macos`](./.macos) file and adjust the settings to your liking.
 Check out the [`Brewfile`](./Brewfile) file and adjust the apps you want to install for your machine. Use [their search page](https://caskroom.github.io/search) to check if the app you want to install is available.
 
 Check out the [`aliases.zsh`](./aliases.zsh) file and add your own aliases. If you need to tweak your `$PATH` check out the [`path.zsh`](./path.zsh) file. These files get loaded in because the `$ZSH_CUSTOM` setting points to the `.dotfiles` directory. You can adjust the [`.zshrc`](./.zshrc) file to your liking to tweak your Oh My Zsh setup. More info about how to customize Oh My Zsh can be found [here](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization).
-
-When installing these dotfiles for the first time you'll need to backup all of your settings with Mackup. Install Mackup and backup your settings with the commands below. Your settings will be synced to iCloud so you can use them to sync between computers and reinstall them when reinstalling your Mac. If you want to save your settings to a different directory or different storage than iCloud, [checkout the documentation](https://github.com/lra/mackup/blob/master/doc/README.md#storage). Also make sure your `.zshrc` file is symlinked from your dotfiles repo to your home directory. 
-
-```zsh
-brew install mackup
-mackup backup
-```
 
 You can tweak the shell theme, the Oh My Zsh settings and much more. Go through the files in this repo and tweak everything to your liking.
 

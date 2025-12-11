@@ -4,7 +4,7 @@ echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Update Homebrew recipes
@@ -18,7 +18,7 @@ brew bundle
 # pecl install memcached imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose tightenco/takeout
+/opt/homebrew/bin/composer global require laravel/installer laravel/valet beyondcode/expose tightenco/takeout
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
@@ -31,8 +31,9 @@ mkdir $HOME/Sites
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+# Kitty
+rm -rf $HOME/.config/kitty
+ln -s $DOTFILES/kitty $HOME/.config/kitty
 
 # Set macOS preferences
 # We will run this last because this will reload the shell

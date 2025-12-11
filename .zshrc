@@ -1,16 +1,11 @@
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
 
-# Added flutter to the path
-export PATH=$HOME/flutter/bin:$PATH
-
-# Add ruby to path
-export GEM_HOME="$HOME/.gem"
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 export PATH="/usr/local/sbin:$PATH"
+
 
 # Enable completions
 autoload -Uz compinit && compinit
@@ -84,7 +79,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-trim)
+# plugins=(git git-trim)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,3 +113,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="/Users/grant.janecek/.lando/bin:$PATH"; #landopath
+
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"

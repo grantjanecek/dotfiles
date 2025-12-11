@@ -22,24 +22,29 @@ alias sites="cd $HOME/code"
 alias rm=trash
 
 # Laravel
-alias a="php artisan"
-alias la="lando artisan"
-alias artisan='php artisan'
-alias fresh="artisan migrate:fresh"
-alias test="artisan test"
-alias ptest="artisan test --parallel"
-alias seed="artisan db:seed"
-alias pf="artisan test --filter="
+# This can be changed to use the active artisan
+# alias activeartisan="php artisan"
+alias activeartisan="lando artisan"
+
+alias artisan='activeartisan'
+alias a="activeartisan"
+
+alias fresh="activeartisan migrate:fresh"
+alias test="activeartisan test"
+alias ptest="activeartisan test --parallel"
+alias seed="activeartisan db:seed"
+alias pf="activeartisan test --filter="
 alias lpf="lando phpunit --filter="
-alias fst="DB_DATABASE=stills_testing a migrate:fresh"
+alias fst="DB_DATABASE=stills_testing activeartisan migrate:fresh"
 
 # Jigsaw
 alias jigsaw="./vendor/bin/jigsaw"
 
 # PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
-alias lc=" lando composer"
+#alias cfresh="rm -rf vendor/ composer.lock && composer i"
+#alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
+alias composer="lando composer"
+alias lc="lando composer"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
