@@ -12,19 +12,19 @@ alias c="clear"
 alias p='phpstorm'
 alias c='code'
 alias s='subl'
-# alias vim="nvim"
+alias vim="nvim"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias sites="cd $HOME/code"
-alias rm=trash
+#alias rm=trash
 
 # Laravel
 # This can be changed to use the active artisan
-# alias activeartisan="php artisan"
-alias activeartisan="lando artisan"
+alias activeartisan="php artisan"
+#alias activeartisan="lando artisan"
 
 alias artisan='activeartisan'
 alias a="activeartisan"
@@ -42,8 +42,8 @@ alias jigsaw="./vendor/bin/jigsaw"
 
 # PHP
 #alias cfresh="rm -rf vendor/ composer.lock && composer i"
-#alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
-alias composer="lando composer"
+alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
+#alias composer="lando composer"
 alias lc="lando composer"
 
 # JS

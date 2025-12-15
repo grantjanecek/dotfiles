@@ -10,8 +10,12 @@ export PATH="$HOME/.node/bin:$PATH"
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
 
-# mysql 
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+#export PATH="/Users/grant.janecek/.lando/bin:$PATH"; #landopath
+
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH" #rubypath
+
+export PATH="/Users/Shared/DBngin/mysql/8.0.33/bin:$PATH" #mysql from DBngin
 
 # Vessel
 export PATH="/Users/grant/.vessel/bin:$PATH"

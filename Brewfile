@@ -20,7 +20,7 @@ brew 'git'
 # brew 'mas' # Mac App Store manager
 # brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20s
 # brew 'svn'
-brew 'trash' # Manage the Trash bin
+brew 'trash' # Manage the Trash bin https://hasseg.org/trash/
 brew 'tree' # List directories in a tree structure
 # brew 'zlib' # Needed for Memcached
 
@@ -35,6 +35,7 @@ brew 'composer'
 # brew 'nginx'
 brew 'node'
 brew 'yarn'
+brew 'neovim
 
 # Apps
 #cask '1password'

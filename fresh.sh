@@ -35,6 +35,10 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 rm -rf $HOME/.config/kitty
 ln -s $DOTFILES/kitty $HOME/.config/kitty
 
+# NVIM
+rm -rf $HOME/.config/nvim
+ln -s $DOTFILES/nvim $HOME/.config/nvim
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
