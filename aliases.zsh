@@ -23,8 +23,8 @@ alias sites="cd $HOME/code"
 
 # Laravel
 # This can be changed to use the active artisan
-alias activeartisan="php artisan"
-#alias activeartisan="lando artisan"
+#alias activeartisan="php artisan"
+alias activeartisan="lando artisan"
 
 alias artisan='activeartisan'
 alias a="activeartisan"

@@ -112,3 +112,6 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="/Users/grant.janecek/.lando/bin:$PATH"; #landopath
+
